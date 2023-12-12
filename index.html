@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icons css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- owl carousel css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- owl carousel default.theme.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Iscano AB</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-warning">ISCANO</span>AB</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Om Oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Tjänster</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Projekt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-pause="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="7000">
+          <img src="images/carousel-interior.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Förverkliga Ditt Drömprojekt</h5>
+            <p class="carousel-text">
+              Renovering, tillbyggnad eller nybyggnation – vi gör det möjligt. Kontakta oss och låt
+              dina drömmar bli verklighet!
+            </p>
+            <p><a href="#about" class="btn btn-warning mt3">Läs mer</a></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="images/carousel-kitchen.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Kök</h5>
+            <p class="carousel-text">
+              Ge ditt kök nytt liv med vår expertis! Låt oss förvandla ditt kök till hjärtat av ditt
+              hem.
+            </p>
+            <p><a href="#about" class="btn btn-warning mt3">Läs mer</a></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="images/carousel-bathroom.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Badrum</h5>
+            <p class="carousel-text">
+              Förnya ditt badrum med vår badrumsrenoveringsexpertis! Vi skapar en avkopplande
+              reträtt som speglar din personliga stil.
+            </p>
+            <p><a href="#about" class="btn btn-warning mt3">Läs mer</a></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="images/carousel-altan.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Altan</h5>
+            <p class="carousel-text">
+              Skapa din drömaltan med oss! Vi designar och bygger utomhusutrymmen som anpassas efter
+              din stil och behov.
+            </p>
+            <p><a href="#about" class="btn btn-warning mt3">Läs mer</a></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="images/carousel-attefallshus.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Attefallshus</h5>
+            <p class="carousel-text">
+              Förvandla din trädgård med ett attefallshus! Vi skapar funktionella och stilfulla
+              utrymmen för gäster, arbete eller extra boende.
+            </p>
+            <p><a href="#about" class="btn btn-warning mt3">Läs mer</a></p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-12 d-flex justify-content-center align-items-center">
+            <div class="about-img d-flex justify-content-center align-items-center">
+              <img src="icons/renewable-orange.png" alt="" class="img-fluid about-icon" />
+            </div>
+          </div>
+          <div
+            class="col-lg-9 col-md-12 col-12 ps-lg-5 pe-lg-5 d-flex justify-content-center align-items-center"
+          >
+            <div class="about-text">
+              <h2>Ett företag. <span class="text-warning">Alla lösningar</span></h2>
+              <p>
+                Välkommen till Iscano – ditt förstahandsval för omfattande renoveringar och
+                byggprojekt. Vi är stolta över att vara ett företag som erbjuder en komplett palett
+                av byggtjänster och skräddarsydda lösningar för dina behov. Med fokus på
+                professionalism, kreativitet och noggrannhet strävar vi alltid efter att överträffa
+                dina förväntningar. Vi är inte bara ett byggföretag, vi är din partner för att
+                förverkliga dina visioner. Oavsett om det handlar om att renovera ditt kök, skapa
+                ett drömbadrum, bygga en vacker altan eller uppföra ett praktiskt attefallshus, så
+                är vi här för att göra det möjligt. Vår mångsidiga kompetens och erfarenhet gör oss
+                till den perfekta lösningen för alla dina byggbehov.
+              </p>
+              <p>
+                För att göra dina byggdrömmar till verklighet. Kontakta oss idag för en personlig
+                konsultation och låt oss börja skapa det perfekta hemmet för dig.
+              </p>
+              <!-- <a href="#" class="btn btn-warning">Läs mer</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+
+    <section class="services section-padding" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Fulländade Bygg- och Renoveringstjänster</h2>
+              <p>Vår Expertis omfattar...</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-dark text-center bg-light pb-2">
+              <div class="card-body">
+                <!-- <i class="bi bi-hammer"></i> -->
+                <img src="icons/building.png" alt="" class="services-icon" />
+                <h3 class="card-title">Byggnation</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit
+                  laborum exercitationem quisquam fuga maiores consequatur. Similique non corporis
+                  vero.
+                </p>
+                <!-- <button class="btn btn-warning text-dark">Läs mer</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-dark text-center bg-light pb-2">
+              <div class="card-body">
+                <!-- <i class="bi bi-shield-check"></i> -->
+                <img src="icons/hammer.png" alt="" class="services-icon" />
+                <h3 class="card-title">Snickeriarbeten</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit
+                  laborum exercitationem quisquam fuga maiores consequatur. Similique non corporis
+                  vero.
+                </p>
+                <!-- <button class="btn btn-warning text-dark">Läs mer</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-dark text-center bg-light pb-2">
+              <div class="card-body">
+                <!-- <i class="bi bi-shield-check"></i> -->
+                <img src="icons/kitchen-2.png" alt="" class="services-icon" />
+                <h3 class="card-title">Köksmontage</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit
+                  laborum exercitationem quisquam fuga maiores consequatur. Similique non corporis
+                  vero.
+                </p>
+                <!-- <button class="btn btn-warning text-dark">Läs mer</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-dark text-center bg-light pb-2 services-card">
+              <div class="card-body">
+                <!-- <i class="bi bi-house-check"></i> -->
+                <img src="icons/paint-brush.png" alt="" class="services-icon" />
+                <h3 class="card-title">Måleri</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit
+                  laborum exercitationem quisquam fuga maiores consequatur. Similique non corporis
+                  vero.
+                </p>
+                <!-- <button class="btn btn-warning text-dark">Läs mer</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-dark text-center bg-light pb-2">
+              <div class="card-body">
+                <!-- <i class="bi bi-shield-check"></i> -->
+                <img src="icons/electricity-1.png" alt="" class="services-icon" />
+                <h3 class="card-title">El</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit
+                  laborum exercitationem quisquam fuga maiores consequatur. Similique non corporis
+                  vero.
+                </p>
+                <!-- <button class="btn btn-warning text-dark">Läs mer</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-dark text-center bg-light pb-2">
+              <div class="card-body">
+                <!-- <i class="bi bi-shield-check"></i> -->
+                <img src="icons/water-pipe.png" alt="" class="services-icon" />
+                <h3 class="card-title">VVS</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit
+                  laborum exercitationem quisquam fuga maiores consequatur. Similique non corporis
+                  vero.
+                </p>
+                <!-- <button class="btn btn-warning text-dark">Läs mer</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-dark text-center bg-light pb-2">
+              <div class="card-body">
+                <!-- <i class="bi bi-shield-check"></i> -->
+                <img src="icons/tile.png" alt="" class="services-icon" />
+                <h3 class="card-title">Plattsättning</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit
+                  laborum exercitationem quisquam fuga maiores consequatur. Similique non corporis
+                  vero.
+                </p>
+                <!-- <button class="btn btn-warning text-dark">Läs mer</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-dark text-center bg-light pb-2">
+              <div class="card-body">
+                <!-- <i class="bi bi-shield-check"></i> -->
+                <img src="icons/floor.png" alt="" class="services-icon" />
+                <h3 class="card-title">Golvläggning</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit
+                  laborum exercitationem quisquam fuga maiores consequatur. Similique non corporis
+                  vero.
+                </p>
+                <!-- <button class="btn btn-warning text-dark">Läs mer</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-dark text-center bg-light pb-2">
+              <div class="card-body">
+                <!-- <i class="bi bi-shield-check"></i> -->
+                <img src="icons/underfloor-heating-2.png" alt="" class="services-icon" />
+                <h3 class="card-title">Golvvärme</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit
+                  laborum exercitationem quisquam fuga maiores consequatur. Similique non corporis
+                  vero.
+                </p>
+                <!-- <button class="btn btn-warning text-dark">Läs mer</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+
+    <div id="portfolio" class="container-fluid portfolio section-padding">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2>Våra Projekt</h2>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-kitchen-1.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Köksmontage</h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-kitchen-2.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Köksmontage</h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-kitchen-3.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Köksmontage</h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-bathroom-2.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Badrumsrenovering</h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-bathroom-3.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Badrumsrenovering</h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-bathroom-4.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Badrumsrenovering</h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-bathroom-5.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Badrumsrenovering</h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-bathroom-6.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Badrumsrenovering</h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-apartment-renovation-1.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Lägenhetsrenovering</h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-apartment-renovation-2.jpg" alt="" class="img-fluid" />
+              </div>
+              <h3 class="card-title">Lägenhetsrenovering</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEAM SECTION -->
+
+    <section id="team" class="team section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Våra Medarbetare</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur<br />
+                adipisicing elit. Pariatur, corrupti.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="images/team-1.jpg" alt="" class="img-fluid rounded-circle" />
+                <h3 class="card-title py-2">Stanislav Fedioutchek</h3>
+                <p class="card-text">VD</p>
+                <p class="socials">
+                  <i class="bi bi-linkedin text-dark mx-1"></i>
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="images/team-2.jpg" alt="" class="img-fluid rounded-circle" />
+                <h3 class="card-title py-2">Stanislav Fedioutchek</h3>
+                <p class="card-text">VD</p>
+                <p class="socials">
+                  <i class="bi bi-linkedin text-dark mx-1"></i>
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="images/team-3.jpg" alt="" class="img-fluid rounded-circle" />
+                <h3 class="card-title py-2">Stanislav Fedioutchek</h3>
+                <p class="card-text">VD</p>
+                <p class="socials">
+                  <i class="bi bi-linkedin text-dark mx-1"></i>
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="images/team-4.jpg" alt="" class="img-fluid rounded-circle" />
+                <h3 class="card-title py-2">Stanislav Fedioutchek</h3>
+                <p class="card-text">VD</p>
+                <p class="socials">
+                  <i class="bi bi-linkedin text-dark mx-1"></i>
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Kontakta Oss</h2>
+              <div class="phone-number-div">
+                <img
+                  src="icons/phone-call.png"
+                  alt="phone call"
+                  srcset=""
+                  class="phone-call-icon"
+                />
+                <p><a href="tel:+46738702363">073-870 23 63</a></p>
+              </div>
+              <div class="mail-div">
+                <img src="icons/mail.png" alt="" srcset="" class="mail-icon" />
+                <p>
+                  <a href="mailto: info@iscano.se">info@iscano.se</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row m-0">
+          <div class="col-md-12 p-0 pt-4 p-4 pb-4">
+            <form action="#" class="bg-light p-4 m-auto">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" required placeholder="Ditt namn" />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      required
+                      placeholder="Ditt Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <textarea
+                      rows="3"
+                      class="form-control"
+                      required
+                      placeholder="Din fråga"
+                    ></textarea>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn btn-warning btn-lg btn-block mt-3">Sänd</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark p-2 text-center">
+      <div class="container footer-container">
+        <p class="text-white">Copyright &copy 2023 Iscano AB</p>
+      </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script for hamburger menu self closing after link click -->
+    <script type="text/javascript">
+      $('.js-scroll-trigger').click(function () {
+        $('.navbar-collapse').collapse('hide');
+      });
+    </script>
+    <!-- jquaery js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- owl carousel js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- owl carousel init -->
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          576: {
+            items: 2,
+          },
+          992: {
+            items: 3,
+          },
+          1200: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

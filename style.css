@@ -1,0 +1,222 @@
+/* Styles to get rid of white space on the right side of page. */
+/* Gives same effect if plased in *styles below. */
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+/* Ghost CSS */
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+body {
+  background: #f1fbff;
+}
+.navbar-nav a {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar .navbar-brand {
+  color: #000;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.nav .navbar-nav .navbar-link {
+  color: #000;
+}
+.section-padding {
+  padding: 70px 0px 0px 0px;
+}
+.carousel-item {
+  /* height: 100vh; */
+  /* min-height: 300px; */
+}
+.carousel-item img {
+  /* height: 100vh; */
+  /* min-height: 300px; */
+}
+.carousel-caption {
+  position: absolute;
+  top: 45%;
+  /* margin: -25px; */
+  padding: 0 !important;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* margin-top: 25px; */
+}
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.carousel-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.btn {
+  margin-top: 1rem;
+}
+.w-100 {
+  height: 100vh;
+  object-fit: cover;
+}
+.about-icon {
+  height: 180px !important;
+}
+.about-text p {
+  font-size: 18px;
+}
+.about-text p:last-of-type {
+  margin-bottom: 0;
+}
+.services .card {
+  margin-bottom: 24px;
+}
+.services .card-body {
+  font-size: 50px;
+}
+.services-icon {
+  width: 64px;
+  margin-bottom: 24px;
+}
+.portfolio .card {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.card-title {
+  font-size: 20px;
+}
+.lead {
+  font-size: 16px !important;
+}
+/* styling of arrows and dot in owl.carousel.js  */
+.owl-nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  position: absolute !important;
+  bottom: 50% !important;
+  width: 100%;
+  margin: 0 !important;
+}
+.owl-prev,
+.owl-next {
+  font-size: 64px !important;
+  margin: 0px 40px !important;
+  color: #eeefef !important;
+  background: none !important;
+}
+.owl-dots {
+  margin-top: 20px !important;
+}
+.team .card-body {
+  font-size: 20px;
+}
+.team .card {
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.contact h2 {
+  margin-bottom: 30px;
+}
+.contact a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+.phone-number-div,
+.mail-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 170px;
+  margin: 0 auto;
+}
+.phone-number-div {
+  margin-bottom: 16px;
+}
+.phone-call-icon,
+.mail-icon {
+  width: 20px;
+  margin-right: 20px;
+}
+.phone-number-div p,
+.mail-div p {
+  margin-bottom: 0;
+}
+.contact button {
+  width: 100%;
+}
+.footer-container p {
+  margin: 0;
+  padding: 8px;
+}
+
+/* --- Responsive CSS --- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption p {
+    width: 100%;
+  }
+  .about-text {
+    padding-top: 50px;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  .img-area img {
+    width: 100%;
+  }
+  .owl-nav {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    margin: -14px;
+  }
+  .carousel-caption h5 {
+    font-size: 24px;
+  }
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+  }
+  .carousel-text {
+    display: none;
+  }
+  .about-text {
+    padding-top: 50px;
+  }
+  .services:last-child .card {
+    margin-bottom: 0;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  .owl-nav {
+    display: none !important;
+  }
+}
