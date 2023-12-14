@@ -16,6 +16,9 @@
 body {
   background: #f1fbff;
 }
+p {
+  margin: 0;
+}
 .navbar-nav a {
   font-size: 16px;
   text-transform: uppercase;
@@ -78,9 +81,6 @@ body {
   height: 100vh;
   object-fit: cover;
 }
-.about-icon {
-  height: 180px !important;
-}
 .about-text p {
   font-size: 18px;
 }
@@ -89,6 +89,7 @@ body {
 }
 .services .card {
   margin-bottom: 24px;
+  min-height: 16rem;
 }
 .services .card-body {
   font-size: 50px;
@@ -127,9 +128,6 @@ body {
 }
 .team .card-body {
   font-size: 20px;
-}
-.team .card {
-  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
 .contact h2 {
   margin-bottom: 30px;
@@ -170,6 +168,12 @@ body {
 
 /* --- Responsive CSS --- */
 
+@media only screen and (max-width: 1200px) {
+  .services .card {
+    min-height: 20rem;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .carousel-caption p {
     width: 100%;
@@ -177,8 +181,14 @@ body {
   .about-text {
     padding-top: 50px;
   }
+  .about-icon {
+    width: 180px !important;
+  }
   .card {
     margin-bottom: 30px;
+  }
+  .services .card {
+    min-height: 14rem;
   }
   .img-area img {
     width: 100%;
@@ -207,6 +217,9 @@ body {
   .carousel-text {
     display: none;
   }
+  .about-icon {
+    width: 140px !important;
+  }
   .about-text {
     padding-top: 50px;
   }
@@ -215,6 +228,9 @@ body {
   }
   .card {
     margin-bottom: 30px;
+  }
+  .services .card {
+    min-height: 14rem;
   }
   .owl-nav {
     display: none !important;
