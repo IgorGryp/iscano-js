@@ -1,9 +1,7 @@
-/* Styles to get rid of white space on the right side of page. */
-/* Gives same effect if plased in *styles below. */
 * {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: montserrat;
   box-sizing: border-box;
 }
@@ -61,8 +59,9 @@ p {
 .carousel-caption p {
   width: 60%;
   margin: auto;
-  font-size: 18px;
-  line-height: 1.9;
+  font-size: 20px;
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
 }
 .carousel-inner::before {
   content: '';
@@ -71,7 +70,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 .btn {
@@ -107,7 +106,14 @@ p {
 .lead {
   font-size: 16px !important;
 }
-/* styling of arrows and dot in owl.carousel.js  */
+/* styling of arrows and dots in owl.carousel.js  */
+.owl-carousel {
+  /* overflow: hidden; */
+}
+/* solving the problem with overflow in portfolio cards */
+#portfolio .row {
+  margin: 0 !important;
+}
 .owl-nav {
   display: flex !important;
   justify-content: space-between !important;
