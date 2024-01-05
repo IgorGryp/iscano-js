@@ -5,12 +5,6 @@
   font-family: montserrat;
   box-sizing: border-box;
 }
-/* Ghost CSS */
-/* * {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-} */
 body {
   background: #f1fbff;
 }
@@ -35,18 +29,9 @@ p {
 .section-padding {
   padding: 70px 0px 0px 0px;
 }
-.carousel-item {
-  /* height: 100vh; */
-  /* min-height: 300px; */
-}
-.carousel-item img {
-  /* height: 100vh; */
-  /* min-height: 300px; */
-}
 .carousel-caption {
   position: absolute;
   top: 45%;
-  /* margin: -25px; */
   padding: 0 !important;
   z-index: 2;
 }
@@ -54,7 +39,6 @@ p {
   font-size: 42px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  /* margin-top: 25px; */
 }
 .carousel-caption p {
   width: 60%;
@@ -80,6 +64,9 @@ p {
   height: 100vh;
   object-fit: cover;
 }
+.about {
+  margin-bottom: 24px;
+}
 .about-text p {
   font-size: 18px;
 }
@@ -88,7 +75,7 @@ p {
 }
 .services .card {
   margin-bottom: 24px;
-  min-height: 16rem;
+  min-height: 18rem;
 }
 .services .card-body {
   font-size: 50px;
@@ -106,7 +93,7 @@ p {
 .lead {
   font-size: 16px !important;
 }
-/* styling of arrows and dots in owl.carousel.js  */
+/* CAROUSEL */
 .owl-carousel {
   /* overflow: hidden; */
 }
@@ -114,6 +101,7 @@ p {
 #portfolio .row {
   margin: 0 !important;
 }
+/* styling of arrows and dots in owl.carousel.js  */
 .owl-nav {
   display: flex !important;
   justify-content: space-between !important;
@@ -132,9 +120,14 @@ p {
 .owl-dots {
   margin-top: 20px !important;
 }
+/* TEAM SECTION */
+.team {
+  margin-bottom: 24px;
+}
 .team .card-body {
   font-size: 20px;
 }
+/* CONTACT SECTION */
 .contact h2 {
   margin-bottom: 30px;
 }
@@ -167,6 +160,7 @@ p {
 .contact button {
   width: 100%;
 }
+/* FOOTER */
 .footer-container p {
   margin: 0;
   padding: 8px;
@@ -204,6 +198,17 @@ p {
   }
 }
 @media only screen and (max-width: 767px) {
+  .about,
+  .services .card,
+  .team {
+    margin-bottom: 10px;
+  }
+  .section-padding {
+    padding-top: 40px;
+  }
+  .section-header {
+    padding-bottom: 30px !important;
+  }
   .navbar-nav {
     text-align: center;
   }
@@ -233,7 +238,7 @@ p {
     margin-bottom: 0;
   }
   .card {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .services .card {
     min-height: 14rem;
