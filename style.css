@@ -4,6 +4,7 @@
   /* overflow-x: hidden; */
   font-family: montserrat;
   box-sizing: border-box;
+  scroll-padding-top: 62px;
 }
 body {
   background: #f1fbff;
@@ -27,7 +28,7 @@ p {
   color: #000;
 }
 .section-padding {
-  padding: 70px 0px 0px 0px;
+  padding-top: 70px;
 }
 .carousel-caption {
   position: absolute;
