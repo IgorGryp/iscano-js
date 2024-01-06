@@ -12,6 +12,7 @@ body {
 p {
   margin: 0;
 }
+/* NAVBAR */
 .navbar-nav a {
   font-size: 16px;
   text-transform: uppercase;
@@ -30,6 +31,7 @@ p {
 .section-padding {
   padding-top: 70px;
 }
+/* HERO SECTION */
 .carousel-caption {
   position: absolute;
   top: 45%;
@@ -65,6 +67,7 @@ p {
   height: 100vh;
   object-fit: cover;
 }
+/* ABOUT SECTION */
 .about {
   margin-bottom: 24px;
 }
@@ -94,7 +97,7 @@ p {
 .lead {
   font-size: 16px !important;
 }
-/* CAROUSEL */
+/* PROJECTS CAROUSEL */
 .owl-carousel {
   /* overflow: hidden; */
 }
